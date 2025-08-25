@@ -15,11 +15,11 @@ body {
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-template-rows: auto 1fr auto;
-  grid-template-areas: 
-  "nav-bar nav-bar"
-  "side-bar app"
-  "side-bar footer"
-  ;
+  grid-template-areas:
+    "nav-bar nav-bar"
+    "side-bar app"
+    "side-bar footer"
+    ;
 }
 
 .nav-bar {
@@ -33,11 +33,11 @@ body {
 }
 
 .side-bar {
-  grid-area: side-bar;
   position: sticky;
   top: 58px;
-  align-self: start;
   height: calc(100vh - 58px);
+  grid-area: side-bar;
+  align-self: start;
 }
 
 .app {
@@ -72,6 +72,5 @@ body {
   .side-bar {
     position: fixed;
     width: 300px;
-    background-color: rgba(0, 0, 0, 0.129);
   }
 }
