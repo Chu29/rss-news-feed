@@ -24,10 +24,20 @@ body {
 
 .nav-bar {
   grid-area: nav-bar;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+  position: sticky;
+  top: 0;
 }
 
 .side-bar {
   grid-area: side-bar;
+  position: sticky;
+  top: 58px;
+  align-self: start;
+  height: calc(100vh - 58px);
 }
 
 .app {
@@ -36,4 +46,32 @@ body {
 
 .footer {
   grid-area: footer;
+  padding: 20px;
+  text-align: right;
+  background-color: var(--tertiary-color);
+  color: var(--secondary-color);
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  margin: 0 auto;
+}
+
+.article-card img {
+  width: 250px;
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  .side-bar {
+    position: fixed;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.129);
+  }
 }
