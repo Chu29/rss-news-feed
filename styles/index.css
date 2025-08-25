@@ -17,8 +17,7 @@ body {
   grid-template-areas:
     "nav-bar nav-bar"
     "side-bar app"
-    "side-bar footer"
-  ;
+    "side-bar footer";
 }
 
 .nav-bar {
