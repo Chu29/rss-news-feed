@@ -4,7 +4,36 @@
   box-sizing: border-box;
 }
 
-img {
-  width: 250px;
-  height: 80%;
+:root {
+  --primary-color: #953ee0;
+  --secondary-color: #fff;
+  --tertiary-color: #202230;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 
+  "nav-bar nav-bar"
+  "side-bar app"
+  "side-bar footer"
+  ;
+}
+
+.nav-bar {
+  grid-area: nav-bar;
+}
+
+.side-bar {
+  grid-area: side-bar;
+}
+
+.app {
+  grid-area: app;
+}
+
+.footer {
+  grid-area: footer;
 }
