@@ -2,6 +2,6 @@
 
 const sideBar = document.getElementById('sidebar')
 
-const toggleSideBar = () => {
+function toggleSideBar() {
   sideBar.classList.toggle('show')
 }

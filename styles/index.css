@@ -21,14 +21,14 @@ body {
     "footer footer";
 }
 
-.footer a {
-  color: var(--secondary-color);
-  text-decoration: underline;
-}
-
 a {
   text-decoration: none;
   color: var(--tertiary-color);
+}
+
+.footer a {
+  color: var(--secondary-color);
+  text-decoration: underline;
 }
 
 .nav-bar {
@@ -50,6 +50,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  border-right: 1px solid var(--tertiary-color);
 }
 
 .feed {
@@ -63,6 +64,26 @@ a {
 
 .app {
   grid-area: app;
+  padding: 20px 0;
+}
+
+.tech-crunch {
+  display: grid;
+  grid-template-columns: repeat(4,2fr);
+  row-gap: 40px;
+  padding: 80px;
+}
+
+.article-card {
+  max-width: 250px;
+  display: flex;
+  gap: 20px;
+}
+
+.article-card > .content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .footer {
