@@ -1,7 +1,7 @@
 'use strict'
 
-const sideBar = document.getElementById('sidebar')
+// const sideBar = document.getElementById('sidebar')
 
-function toggleSideBar() {
-  sideBar.classList.toggle('show')
-}
+// const toggleSideBar = () => {
+//   sideBar.classList.toggle('show')
+// }
