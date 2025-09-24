@@ -211,11 +211,14 @@
     </section>
 
     <form action="post" class="show-form close-form form">
-      <svg class="close-form-btn" height="20" width="20" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+      <div class="form-title">
+        <h2>Add New Feed</h2>
+      <svg class="close-form-btn" height="25" width="25" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
         <path
-          d="m390.249 91.582l30.17 30.17L286.169 256l134.25 134.249l-30.17 30.17L256 286.169l-134.248 134.25l-30.17-30.17L225.83 256L91.582 121.752l30.17-30.17L256 225.83z"
-          fill="currentColor" fillRule="evenodd" />
+          d="M512 0C229.232 0 0 229.232 0 512c0 282.784 229.232 512 512 512c282.784 0 512-229.216 512-512C1024 229.232 794.784 0 512 0zm0 961.008c-247.024 0-448-201.984-448-449.01c0-247.024 200.976-448 448-448s448 200.977 448 448s-200.976 449.01-448 449.01zm181.008-630.016c-12.496-12.496-32.752-12.496-45.248 0L512 466.752l-135.76-135.76c-12.496-12.496-32.752-12.496-45.264 0c-12.496 12.496-12.496 32.752 0 45.248L466.736 512l-135.76 135.76c-12.496 12.48-12.496 32.769 0 45.249c12.496 12.496 32.752 12.496 45.264 0L512 557.249l135.76 135.76c12.496 12.496 32.752 12.496 45.248 0c12.496-12.48 12.496-32.769 0-45.249L557.248 512l135.76-135.76c12.512-12.512 12.512-32.768 0-45.248z"
+          fill="currentColor" />
       </svg>
+      </div>
       <div class="feed-name">
         <label for="feed-title" name="feed-title">Name</label>
         <input id="feed-title" name="feed-title" type="text">
@@ -224,8 +227,9 @@
         <label for="rss-link" name="rss-link">Link</label>
         <input id="rss-link" name="rss-link" type="text">
       </div>
-      <div class="add-feed-cta"><input type="button" value="Add">
-        <input type="button" value="Cancel">
+      <div class="add-feed-cta">
+        <input class="add-btn" type="button" value="Add">
+        <input class="cancel-btn" type="button" value="Cancel">
       </div>
     </form>
   </main>
